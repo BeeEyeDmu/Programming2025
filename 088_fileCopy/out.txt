@@ -1,0 +1,9 @@
+	// f1 파일에서 f2 파일로 복사(에러 체크 필요)
+	fp1 = fopen(f1, "r");
+	fp2 = fopen(f2, "w");
+
+	while (fgets(buffer, 100, fp1) != NULL)
+		fputs(buffer, fp2);
+
+	fclose(fp1);
+	fclose(fp2);
