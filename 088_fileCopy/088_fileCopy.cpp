@@ -22,14 +22,14 @@ int main()
 	fp2 = fopen(f2, "w");
 
 	// 한 줄씩 복사
-	/*while (fgets(buffer, 100, fp1) != NULL)
-		fputs(buffer, fp2);*/
+	while (fgets(buffer, 100, fp1) != NULL)
+		fputs(buffer, fp2);
 
 	// 한 글자씩 복사
 	int c;
 
-	while ((c = fgetc(fp1)) != EOF)
-		fputc(c, fp2);
+	//while ((c = fgetc(fp1)) != EOF)
+	//	fputc(c, fp2);
 
 	fclose(fp1);
 	fclose(fp2);
